@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name" translatable="false">SPYon</string>
+
+    <!--    Game Fragment strings-->
+    <string name="game_frag_playerName">Player</string>
+    <string name="game_frag_role">Your role</string>
+    <string name="game_frag_place">Place</string>
+    <string name="game_frag_roleSPY">SPY</string>
+    <string name="game_frag_rolePeaceful">Peaceful</string>
+
+    <!--    Players Fragment strings-->
+    <string name="players_frag_tag">SPY\'s configuration</string>
+    <string name="players_frag_enterHint">Enter player nickname</string>
+    <string name="players_frag_toast_enterNick">Enter player nickname!</string>
+    <string name="players_frag_toast_userAlreadyExists">This player already exists!</string>
+
+    <!--    Settings Fragment strings-->
+    <string name="settings_frag_tag">Settings</string>
+    <string name="settings_frag_language">Switch to Russian</string>
+    <string name="settings_frag_languageSettings">Language</string>
+
+    <!--    Start Fragment strings-->
+    <string name="start_frag_hint">To start game, you need to have\n3 or more players</string>
+    <string name="start_frag_addButton">Add players</string>
+    <string name="start_frag_startButton">Start game</string>
+    <string name="start_frag_toast_addPlayers">Add more players to start!</string>
+
+    <!--    Places array-->
+    <string-array name="places_array">
+        <item>Plane</item>
+        <item>Train</item>
+        <item>Metro station</item>
+        <item>Taxi</item>
+        <item>PC club</item>
+        <item>Forest</item>
+        <item>Basement</item>
+    </string-array>
+</resources>
