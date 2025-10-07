@@ -19,8 +19,8 @@
 
     <!--    Start Fragment strings-->
     <string name="start_frag_hint">Для начала игры нужно добавить\nхотя бы 3 игрока</string>
-    <string name="start_frag_addButton">Добавить игроков</string>
-    <string name="start_frag_startButton">Начать игру</string>
+    <string name="start_frag_addButton">Добавить</string>
+    <string name="start_frag_startButton">Играть</string>
     <string name="start_frag_toast_addPlayers">Добавьте больше игроков!</string>
 
     <!--    Places array-->
@@ -32,5 +32,82 @@
         <item>Компьютерный клуб</item>
         <item>Лес</item>
         <item>Подвал</item>
+        <item>Баня</item>
+        <item>Аквапарк</item>
+        <item>СИЗО</item>
+        <item>Общественный туалет</item>
+        <item>Пункт выдачи заказов</item>
+        <item>Кафе</item>
+        <item>Столовая</item>
+        <item>Балкон</item>
+        <item>Лифт</item>
+        <item>Автобус</item>
+        <item>Парк</item>
+        <item>Троллейбус</item>
+        <item>Трамвай</item>
+        <item>Панк концерт</item>
+        <item>Тренажерный зал</item>
+        <item>Вертолет</item>
+        <item>Дирижабль</item>
+        <item>Поле</item>
+        <item>Вершина горы</item>
+        <item>Гараж</item>
+        <item>Автомойка</item>
+        <item>Автобусная остановка</item>
+        <item>Магазин</item>
+        <item>Рынок</item>
+        <item>Завод</item>
+        <item>Кальянный бар</item>
+        <item>Отель</item>
+        <item>Кофейня</item>
+        <item>Казарма</item>
+        <item>Армия</item>
+        <item>Озеро</item>
+        <item>Река</item>
+        <item>Пруд</item>
+        <item>Автомобиль</item>
+        <item>Автосалон</item>
+        <item>Парк</item>
+        <item>Колесо обозрения</item>
+        <item>Американские горки</item>
+        <item>Офис</item>
+        <item>Бункер</item>
+        <item>Квартира</item>
+        <item>Загородный дом</item>
+        <item>Огород</item>
+        <item>Парикмахерская</item>
+        <item>Тату салон</item>
+        <item>Поликлиника</item>
+        <item>Больница</item>
+        <item>Аптека</item>
+        <item>Бар</item>
+        <item>Цирк</item>
+        <item>Кинотеатр</item>
+        <item>Эйфелева башня</item>
+        <item>Moscow city</item>
+        <item>Красная площадь</item>
+        <item>Военкомат</item>
+        <item>Школа</item>
+        <item>Раздевалка</item>
+        <item>Гардероб</item>
+        <item>Маршрутка</item>
+        <item>Электричка</item>
+        <item>АЭС</item>
+        <item>ЧАЭС</item>
+        <item>Футбольный стадион</item>
+        <item>Зоопарк</item>
+        <item>Зоомагазин</item>
+        <item>Секонд-хенд</item>
+        <item>МКС</item>
+        <item>Марс</item>
+        <item>Луна</item>
+        <item>Диван</item>
+        <item>Кресло</item>
+        <item>Очередь</item>
+        <item>Сцена</item>
+        <item>Корабль</item>
+        <item>Титаник</item>
+        <item>Шкаф</item>
+        <item>Кусты</item>
     </string-array>
 </resources>

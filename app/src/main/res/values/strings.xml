@@ -21,18 +21,95 @@
 
     <!--    Start Fragment strings-->
     <string name="start_frag_hint">To start game, you need to have\n3 or more players</string>
-    <string name="start_frag_addButton">Add players</string>
-    <string name="start_frag_startButton">Start game</string>
+    <string name="start_frag_addButton">Add</string>
+    <string name="start_frag_startButton">Play</string>
     <string name="start_frag_toast_addPlayers">Add more players to start!</string>
 
     <!--    Places array-->
     <string-array name="places_array">
-        <item>Plane</item>
+        <item>Airplane</item>
         <item>Train</item>
         <item>Metro station</item>
         <item>Taxi</item>
-        <item>PC club</item>
+        <item>Gaming club</item>
         <item>Forest</item>
         <item>Basement</item>
+        <item>Sauna</item>
+        <item>Water park</item>
+        <item>Pre-trial detention center</item>
+        <item>Public toilet</item>
+        <item>Order pickup point</item>
+        <item>Cafe</item>
+        <item>Dining hall</item>
+        <item>Balcony</item>
+        <item>Elevator</item>
+        <item>Bus</item>
+        <item>Park</item>
+        <item>Trolleybus</item>
+        <item>Tram</item>
+        <item>Punk concert</item>
+        <item>Gym</item>
+        <item>Helicopter</item>
+        <item>Dirigible</item>
+        <item>Field</item>
+        <item>Mountain peak</item>
+        <item>Garage</item>
+        <item>Car wash</item>
+        <item>Bus stop</item>
+        <item>Store</item>
+        <item>Market</item>
+        <item>Factory</item>
+        <item>Shisha lounge</item>
+        <item>Hotel</item>
+        <item>Coffee shop</item>
+        <item>Barracks</item>
+        <item>Army</item>
+        <item>Lake</item>
+        <item>River</item>
+        <item>Pond</item>
+        <item>Car</item>
+        <item>Car dealership</item>
+        <item>Park</item>
+        <item>Ferris wheel</item>
+        <item>Roller coaster</item>
+        <item>Office</item>
+        <item>Bunker</item>
+        <item>Flat</item>
+        <item>Country house</item>
+        <item>Vegetable garden</item>
+        <item>Barbershop</item>
+        <item>Tattoo parlor</item>
+        <item>Polyclinic</item>
+        <item>Hospital</item>
+        <item>Drugstore</item>
+        <item>Bar</item>
+        <item>Circus</item>
+        <item>Cinema</item>
+        <item>Eiffel Tower</item>
+        <item>Moscow City</item>
+        <item>Red Square</item>
+        <item>Military registration and enlistment office</item>
+        <item>School</item>
+        <item>Locker room</item>
+        <item>Wardrobe</item>
+        <item>Minibus</item>
+        <item>Commuter train</item>
+        <item>Nuclear power plant</item>
+        <item>Chernobyl Nuclear Power Plant</item>
+        <item>Football stadium</item>
+        <item>Zoo</item>
+        <item>Pet store</item>
+        <item>Second-hand store</item>
+        <item>International Space Station</item>
+        <item>Mars</item>
+        <item>Moon</item>
+        <item>Sofa</item>
+        <item>Armchair</item>
+        <item>Queue</item>
+        <item>Stage</item>
+        <item>Ship</item>
+        <item>Titanic</item>
+        <item>Closet</item>
+        <item>Bushes</item>
     </string-array>
 </resources>

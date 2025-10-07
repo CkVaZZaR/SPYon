@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,9 +23,18 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val settingsButton: Button = findViewById(R.id.setting_button)
-        val playersButton: Button = findViewById(R.id.players_button)
-        val gameButton: Button = findViewById(R.id.game_button)
+        val dbSet = DbSettings(this, null)
+
+        if (!dbSet.getSetting("language")) {
+
+            dbSet.setSetting("language", "en")
+        }
+
+        LocaleHelper.applySavedLocale(this)
+
+        val settingsButton: MaterialButton = findViewById(R.id.setting_button)
+        val playersButton: MaterialButton = findViewById(R.id.players_button)
+        val gameButton: MaterialButton = findViewById(R.id.game_button)
         val frameLay: FrameLayout = findViewById(R.id.frame_layout)
 
         val gameFragment = GameFragment()
@@ -41,17 +51,29 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        fun setAllClear() {
+            settingsButton.setIconResource(R.drawable.settings_clear)
+            playersButton.setIconResource(R.drawable.players_clear)
+            gameButton.setIconResource(R.drawable.game_clear)
+        }
+
         setNewFragment(startFragment)
 
         settingsButton.setOnClickListener {
+            setAllClear()
+            settingsButton.setIconResource(R.drawable.settings_filled)
             setNewFragment(settingFragment)
         }
 
         gameButton.setOnClickListener {
+            setAllClear()
+            gameButton.setIconResource(R.drawable.game_filled)
             setNewFragment(startFragment)
         }
 
         playersButton.setOnClickListener {
+            setAllClear()
+            playersButton.setIconResource(R.drawable.players_filled)
             setNewFragment(playerFragment)
         }
     }

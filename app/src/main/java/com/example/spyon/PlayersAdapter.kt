@@ -6,9 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.divider.MaterialDivider
 
 class PlayersAdapter(val players: MutableList<String>, var context: Context): RecyclerView.Adapter<PlayersAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(
@@ -16,7 +18,7 @@ class PlayersAdapter(val players: MutableList<String>, var context: Context): Re
         viewType: Int
     ): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.player_in_list, parent, false)
-        return MyViewHolder(view)
+        return MyViewHolder(view, itemCount)
     }
 
     override fun onBindViewHolder(
@@ -45,11 +47,21 @@ class PlayersAdapter(val players: MutableList<String>, var context: Context): Re
         notifyItemRemoved(position)
     }
 
-    inner class MyViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    inner class MyViewHolder(view: View, itemCount: Int): RecyclerView.ViewHolder(view) {
+        val playerImage: ImageView = view.findViewById(R.id.player_image)
         val name: TextView = view.findViewById(R.id.player_nikname)
         val delBtn: Button = view.findViewById(R.id.delete_player_button)
 
+        val range = 1..6
+        val randomNumber: Int = range.random()
+
         init {
+            val imageId = context.resources.getIdentifier("face_" + randomNumber,
+                "drawable",
+                context.packageName)
+
+            playerImage.setImageResource(imageId)
+
             delBtn.setOnClickListener {
                 delPlayer(bindingAdapterPosition)
             }

@@ -6,4 +6,6 @@
     <color name="dark_blue">#1E14AF</color>
     <color name="my_light_primary">#1264F0</color>
     <color name="light_transparent">#E0FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="red">#F44336</color>
 </resources>

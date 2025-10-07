@@ -32,24 +32,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/setting_button"
+            style="@style/Widget.Material3.Button.IconButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="settings" />
+            app:icon="@drawable/settings_clear"
+            app:iconSize="30sp"
+            android:paddingHorizontal="30dp"
+            app:iconTint="@color/black"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/game_button"
+            style="@style/Widget.Material3.Button.IconButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="game" />
+            app:iconTint="@color/black"
+            app:iconSize="30sp"
+            android:paddingHorizontal="30dp"
+            app:icon="@drawable/game_filled"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/players_button"
+            style="@style/Widget.Material3.Button.IconButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="players" />
-
+            app:iconTint="@color/black"
+            app:icon="@drawable/players_clear"
+            android:paddingHorizontal="30dp"
+            app:iconSize="30sp"/>
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

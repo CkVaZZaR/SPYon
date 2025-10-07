@@ -16,86 +16,90 @@
         android:text="@string/settings_frag_tag"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/ll_settings_frag"/>
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <LinearLayout
-        android:id="@+id/ll_settings_frag"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
+        android:padding="20dp"
         app:layout_constraintTop_toBottomOf="@+id/settings_frag_tag">
 
-        <TextView
+        <LinearLayout
+            android:id="@+id/ll_settings_frag"
             android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="bottom"
-            android:paddingHorizontal="20dp"
-            android:paddingBottom="10dp"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:text="@string/settings_frag_languageSettings"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-        <com.google.android.material.divider.MaterialDivider
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="bottom"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/settings_frag_languageSettings"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
-        <androidx.appcompat.widget.SwitchCompat
-            android:id="@+id/languageSwitcher"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:paddingHorizontal="20dp"
-            android:text="@string/settings_frag_language"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:gravity="bottom"
-            android:paddingHorizontal="20dp"
-            android:paddingBottom="10dp"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:text="Other settings"/>
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/languageSwitcher"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingHorizontal="20dp"
+                android:text="@string/settings_frag_language"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-        <com.google.android.material.divider.MaterialDivider
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="bottom"
+                android:paddingHorizontal="20dp"
+                android:paddingBottom="10dp"
+                android:text="Other settings"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
 
-        <Switch
-            android:id="@+id/switch1"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:paddingHorizontal="20dp"
-            android:text="This switcher do N.O.T.H.I.N.G"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingHorizontal="20dp"
+                android:text="This switcher do N.O.T.H.I.N.G"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-        <com.google.android.material.divider.MaterialDivider
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <Switch
-            android:id="@+id/switch2"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:paddingHorizontal="20dp"
-            android:text="And this..."
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingHorizontal="20dp"
+                android:text="And this..."
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
 
-        <com.google.android.material.divider.MaterialDivider
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            <com.google.android.material.divider.MaterialDivider
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-        <Switch
-            android:id="@+id/switch3"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:paddingHorizontal="20dp"
-            android:text="This too bro"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
-    </LinearLayout>
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingHorizontal="20dp"
+                android:text="This too bro"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+        </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

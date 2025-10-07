@@ -17,6 +17,19 @@ class SettingsFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_settings, container, false)
 
         val languageSwitcher: SwitchCompat = view.findViewById(R.id.languageSwitcher)
+        val db = DbSettings(requireContext(), null)
+
+        languageSwitcher.setOnClickListener {
+            if (db.getValue("language") == "en") {
+                LocaleHelper.setLocale(requireActivity(), "ru")
+                db.setSetting("language", "ru")
+                requireActivity().recreate()
+            } else {
+                LocaleHelper.setLocale(requireActivity(), "en")
+                db.setSetting("language", "en")
+                requireActivity().recreate()
+            }
+        }
 
         return view
     }

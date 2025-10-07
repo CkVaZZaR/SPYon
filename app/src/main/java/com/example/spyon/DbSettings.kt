@@ -2,13 +2,14 @@ package com.example.spyon
 
 import android.content.ContentValues
 import android.content.Context
+import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
 class DbSettings(val context: Context, factory: SQLiteDatabase.CursorFactory?):
     SQLiteOpenHelper(context, "settingsDB", factory, 1) {
     override fun onCreate(db: SQLiteDatabase?) {
-        val query = "CREATE TABLE settings (id INT PRIMARY KEY, setting TEXT, value INT)"
+        val query = "CREATE TABLE settings (id INT PRIMARY KEY, setting TEXT, value TEXT)"
         db!!.execSQL(query)
     }
 
@@ -24,8 +25,6 @@ class DbSettings(val context: Context, factory: SQLiteDatabase.CursorFactory?):
     fun delSetting(setting: String) {
         val db = this.writableDatabase
         db.delete("settings", "setting = ?", arrayOf(setting))
-
-        db.close()
     }
 
     fun getSetting(setting: String): Boolean {
@@ -36,7 +35,23 @@ class DbSettings(val context: Context, factory: SQLiteDatabase.CursorFactory?):
         return result.use { it.moveToFirst() }
     }
 
-    fun setSetting(setting: String, value: Int) {
+    fun getValue(setting: String): String? {
+        val db = this.readableDatabase
+
+        val cursor = db.query(
+            "settings",
+            arrayOf("value"),
+            "setting = ?",
+            arrayOf(setting),
+            null, null, null
+        )
+
+        val result = if (cursor.moveToFirst()) cursor.getString(0) else null
+        cursor.close()
+        return result
+    }
+
+    fun setSetting(setting: String, value: String) {
         val db = this.writableDatabase
 
         if (getSetting(setting)) {
@@ -49,7 +64,5 @@ class DbSettings(val context: Context, factory: SQLiteDatabase.CursorFactory?):
         values.put("value", value)
 
         db.insert("settings", null, values)
-
-        db.close()
     }
 }
