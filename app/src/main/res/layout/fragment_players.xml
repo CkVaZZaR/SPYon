@@ -43,18 +43,19 @@
 
         <EditText
             android:id="@+id/add_player_field"
-            android:layout_width="320dp"
+            android:layout_width="0dp"
             android:layout_height="50dp"
             android:autofillHints=""
             android:hint="@string/players_frag_enterHint"
             android:inputType="text"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/add_player_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.button.MaterialButton
             style="@style/Widget.Material3.Button.IconButton.Outlined"
-            app:icon="@drawable/plus"
+            app:icon="@drawable/plus_2"
             app:strokeWidth="2dp"
             app:iconTint="@color/black"
             android:id="@+id/add_player_button"

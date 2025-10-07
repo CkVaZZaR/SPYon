@@ -5,6 +5,7 @@
     <string name="game_frag_place">Место</string>
     <string name="game_frag_roleSPY">ШПИОН</string>
     <string name="game_frag_rolePeaceful">Мирный</string>
+    <string name="game_frag_showButton">Открыть</string>
 
     <!--    Players Fragment strings-->
     <string name="players_frag_tag">Шпионская конфигурация</string>
@@ -14,7 +15,7 @@
 
     <!--    Settings Fragment strings-->
     <string name="settings_frag_tag">Настройки</string>
-    <string name="settings_frag_language">Переключить на английский</string>
+    <string name="settings_frag_language">Switch to english</string>
     <string name="settings_frag_languageSettings">Язык</string>
 
     <!--    Start Fragment strings-->

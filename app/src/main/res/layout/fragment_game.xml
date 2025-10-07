@@ -47,7 +47,7 @@
 
     </TextView>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,41 +55,78 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="20dp"
-        android:gravity="center">
+        android:paddingHorizontal="20dp">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/rerole_button"
+            style="@style/Widget.Material3.Button.IconButton.Outlined"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rerole">
+            android:layout_gravity="start"
+            app:icon="@drawable/refresh"
+            app:iconTint="@color/black"
+            app:iconSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1.5dp">
 
-        </Button>
+        </com.google.android.material.button.MaterialButton>
 
-        <Button
-            android:id="@+id/previous_button"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Previous">
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        </Button>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/previous_button"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/prev"
+                app:iconTint="@color/black"
+                app:strokeColor="@color/black"
+                app:iconSize="30sp"
+                app:strokeWidth="1.5dp">
 
-        <Button
-            android:id="@+id/show_role_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="show role">
+            </com.google.android.material.button.MaterialButton>
 
-        </Button>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/show_role_button"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:icon="@drawable/show"
+                app:iconTint="@color/black"
+                app:strokeColor="@color/black"
+                android:textSize="16sp"
+                app:iconSize="30sp"
+                android:layout_marginHorizontal="10dp"
+                app:strokeWidth="1.5dp">
 
-        <Button
-            android:id="@+id/next_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Next">
+            </com.google.android.material.button.MaterialButton>
 
-        </Button>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/next_button"
+                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/next"
+                app:iconTint="@color/black"
+                app:strokeColor="@color/black"
+                app:iconSize="30sp"
+                app:strokeWidth="1.5dp">
 
-    </LinearLayout>
+            </com.google.android.material.button.MaterialButton>
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
         android:layout_width="match_parent"

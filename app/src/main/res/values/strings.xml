@@ -7,6 +7,7 @@
     <string name="game_frag_place">Place</string>
     <string name="game_frag_roleSPY">SPY</string>
     <string name="game_frag_rolePeaceful">Peaceful</string>
+    <string name="game_frag_showButton">Show</string>
 
     <!--    Players Fragment strings-->
     <string name="players_frag_tag">SPY\'s configuration</string>
@@ -16,7 +17,7 @@
 
     <!--    Settings Fragment strings-->
     <string name="settings_frag_tag">Settings</string>
-    <string name="settings_frag_language">Switch to Russian</string>
+    <string name="settings_frag_language">Переключить на русский</string>
     <string name="settings_frag_languageSettings">Language</string>
 
     <!--    Start Fragment strings-->

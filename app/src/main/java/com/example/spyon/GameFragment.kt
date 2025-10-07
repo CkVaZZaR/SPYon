@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.google.android.material.button.MaterialButton
 
 class GameFragment : Fragment() {
     override fun onCreateView(
@@ -23,7 +24,7 @@ class GameFragment : Fragment() {
         val gamePlace: TextView = view.findViewById(R.id.game_place)
         val reroleButton: Button = view.findViewById(R.id.rerole_button)
         val previousButton: Button = view.findViewById(R.id.previous_button)
-        val showRoleButton: Button = view.findViewById(R.id.show_role_button)
+        val showRoleButton: MaterialButton = view.findViewById(R.id.show_role_button)
         val nextButton: Button = view.findViewById(R.id.next_button)
 
         val ge = GameEngine(requireContext())
@@ -47,10 +48,12 @@ class GameFragment : Fragment() {
         @SuppressLint("SetTextI18n")
         fun roleShower(roleShowed: Boolean, role: String, place: String): Boolean {
             if (roleShowed) {
+                showRoleButton.setIconResource(R.drawable.show)
                 roleCardView.setImageResource(R.drawable.spyon_card_filled)
                 playerRole.text = ""
                 gamePlace.text = ""
             } else {
+                showRoleButton.setIconResource(R.drawable.not_show)
                 roleCardView.setImageResource(R.drawable.spyon_card_empty)
                 playerRole.text = getString(R.string.game_frag_role) + ": $role"
                 gamePlace.text = getString(R.string.game_frag_place) + ": $place"
