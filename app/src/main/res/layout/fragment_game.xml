@@ -40,6 +40,7 @@
         android:layout_height="wrap_content"
         android:text="Player: Dodik"
         android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,7 +60,7 @@
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/rerole_button"
-            style="@style/Widget.Material3.Button.IconButton.Outlined"
+            style="@style/Widget.Material3.Button.IconButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
@@ -68,9 +69,7 @@
             app:iconSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:strokeColor="@color/black"
-            app:strokeWidth="1.5dp">
+            app:layout_constraintTop_toTopOf="parent">
 
         </com.google.android.material.button.MaterialButton>
 
@@ -86,20 +85,19 @@
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/previous_button"
-                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                style="@style/Widget.Material3.Button.IconButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/prev"
+                app:icon="@drawable/prev_4"
                 app:iconTint="@color/black"
                 app:strokeColor="@color/black"
-                app:iconSize="30sp"
-                app:strokeWidth="1.5dp">
+                app:iconSize="30sp">
 
             </com.google.android.material.button.MaterialButton>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/show_role_button"
-                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                style="@style/Widget.Material3.Button.IconButton"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:icon="@drawable/show"
@@ -107,21 +105,19 @@
                 app:strokeColor="@color/black"
                 android:textSize="16sp"
                 app:iconSize="30sp"
-                android:layout_marginHorizontal="10dp"
-                app:strokeWidth="1.5dp">
+                android:layout_marginHorizontal="10dp">
 
             </com.google.android.material.button.MaterialButton>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/next_button"
-                style="@style/Widget.Material3.Button.IconButton.Outlined"
+                style="@style/Widget.Material3.Button.IconButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/next"
+                app:icon="@drawable/next_4"
                 app:iconTint="@color/black"
                 app:strokeColor="@color/black"
-                app:iconSize="30sp"
-                app:strokeWidth="1.5dp">
+                app:iconSize="30sp">
 
             </com.google.android.material.button.MaterialButton>
         </LinearLayout>
@@ -143,7 +139,7 @@
             android:id="@+id/player_role"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textColor="@android:color/white"
             android:text="your role: peaseful"
             android:layout_marginBottom="20dp">
@@ -154,7 +150,7 @@
             android:id="@+id/game_place"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="20sp"
             android:textColor="@android:color/white"
             android:textStyle="bold"
             android:text="place: school">

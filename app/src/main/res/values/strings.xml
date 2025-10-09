@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name" translatable="false">SPYon</string>
 
+    <!--    Whole app-->
+    <string name="agree">Yes</string>
+    <string name="disagree">No</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+
     <!--    Game Fragment strings-->
     <string name="game_frag_playerName">Player</string>
     <string name="game_frag_role">Your role</string>
@@ -8,6 +15,7 @@
     <string name="game_frag_roleSPY">SPY</string>
     <string name="game_frag_rolePeaceful">Peaceful</string>
     <string name="game_frag_showButton">Show</string>
+    <string name="game_frag_rerole_alert">Game will be reroled.\nAre you sure?</string>
 
     <!--    Players Fragment strings-->
     <string name="players_frag_tag">SPY\'s configuration</string>
@@ -17,8 +25,10 @@
 
     <!--    Settings Fragment strings-->
     <string name="settings_frag_tag">Settings</string>
-    <string name="settings_frag_language">Переключить на русский</string>
+    <string name="settings_frag_language">Select language</string>
     <string name="settings_frag_languageSettings">Language</string>
+    <string name="settings_frag_placeList">Place list</string>
+    <string name="settings_frag_showPlaces">Show list</string>
 
     <!--    Start Fragment strings-->
     <string name="start_frag_hint">To start game, you need to have\n3 or more players</string>

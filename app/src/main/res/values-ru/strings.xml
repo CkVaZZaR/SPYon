@@ -1,4 +1,11 @@
 <resources>
+    <!--    Whole app-->
+    <string name="agree">Да</string>
+    <string name="disagree">Нет</string>
+    <string name="apply">Принять</string>
+    <string name="cancel">Отменить</string>
+    <string name="close">Закрыть</string>
+
     <!--    Game Fragment strings-->
     <string name="game_frag_playerName">Игрок</string>
     <string name="game_frag_role">Твоя роль</string>
@@ -6,6 +13,7 @@
     <string name="game_frag_roleSPY">ШПИОН</string>
     <string name="game_frag_rolePeaceful">Мирный</string>
     <string name="game_frag_showButton">Открыть</string>
+    <string name="game_frag_rerole_alert">Игра будет перезапущена.\nВы уверены?</string>
 
     <!--    Players Fragment strings-->
     <string name="players_frag_tag">Шпионская конфигурация</string>
@@ -15,8 +23,10 @@
 
     <!--    Settings Fragment strings-->
     <string name="settings_frag_tag">Настройки</string>
-    <string name="settings_frag_language">Switch to english</string>
+    <string name="settings_frag_language">Выбор языка</string>
     <string name="settings_frag_languageSettings">Язык</string>
+    <string name="settings_frag_placeList">Список мест</string>
+    <string name="settings_frag_showPlaces">Показать список</string>
 
     <!--    Start Fragment strings-->
     <string name="start_frag_hint">Для начала игры нужно добавить\nхотя бы 3 игрока</string>

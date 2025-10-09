@@ -1,15 +1,11 @@
 package com.example.spyon
 
 import android.os.Bundle
-import android.widget.Button
-import android.widget.FrameLayout
-import androidx.activity.SystemBarStyle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
@@ -27,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         if (!dbSet.getSetting("language")) {
 
-            dbSet.setSetting("language", "en")
+            dbSet.setSetting("language", "English")
         }
 
         LocaleHelper.applySavedLocale(this)
@@ -35,14 +31,10 @@ class MainActivity : AppCompatActivity() {
         val settingsButton: MaterialButton = findViewById(R.id.setting_button)
         val playersButton: MaterialButton = findViewById(R.id.players_button)
         val gameButton: MaterialButton = findViewById(R.id.game_button)
-        val frameLay: FrameLayout = findViewById(R.id.frame_layout)
 
-        val gameFragment = GameFragment()
         val settingFragment = SettingsFragment()
         val playerFragment = PlayersFragment()
         val startFragment = StartFragment()
-
-        val placesList: Array<String> = resources.getStringArray(R.array.places_array)
 
         fun setNewFragment(frag: Fragment) {
             supportFragmentManager.beginTransaction().run {

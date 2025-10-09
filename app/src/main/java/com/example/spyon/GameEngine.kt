@@ -10,14 +10,12 @@ class GameEngine(val context: Context) {
     val placeList: Array<String> = context.resources.getStringArray(R.array.places_array)
 
     fun getRandomPlace(): String? {
+        placeList.shuffle()
         return placeList.random()
     }
 
     fun getRandomPlayer(): String? {
-        if (playerList.count() > 0) {
-            return playerList.random()
-        }
-        return ""
+        return playerList.random()
     }
 
     fun getAllPlayers(): MutableList<String> {

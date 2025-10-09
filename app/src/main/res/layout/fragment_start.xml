@@ -64,6 +64,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
+            android:textSize="17sp"
+            app:iconSize="0sp"
             android:text="@string/start_frag_addButton">
 
         </com.google.android.material.button.MaterialButton>
@@ -75,6 +77,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
+            android:textSize="17sp"
+            app:iconSize="0sp"
             android:text="@string/start_frag_startButton">
 
         </com.google.android.material.button.MaterialButton>

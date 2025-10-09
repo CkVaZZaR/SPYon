@@ -40,6 +40,7 @@
             app:icon="@drawable/settings_clear"
             app:iconSize="30sp"
             android:paddingHorizontal="30dp"
+            android:layout_marginHorizontal="10dp"
             app:iconTint="@color/black"/>
 
         <com.google.android.material.button.MaterialButton
@@ -50,6 +51,7 @@
             app:iconTint="@color/black"
             app:iconSize="30sp"
             android:paddingHorizontal="30dp"
+            android:layout_marginHorizontal="10dp"
             app:icon="@drawable/game_filled"/>
 
         <com.google.android.material.button.MaterialButton
@@ -60,6 +62,7 @@
             app:iconTint="@color/black"
             app:icon="@drawable/players_clear"
             android:paddingHorizontal="30dp"
+            android:layout_marginHorizontal="10dp"
             app:iconSize="30sp"/>
     </LinearLayout>
 

@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.graphics.toColor
 import com.google.android.material.button.MaterialButton
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
 class GameFragment : Fragment() {
     override fun onCreateView(
@@ -77,14 +79,22 @@ class GameFragment : Fragment() {
         }
 
         reroleButton.setOnClickListener {
-            playerIndex = 0
-            spy = ge.getRandomPlayer()
-            val prevPlace = placeString
-            playerNikname.text = playerList[playerIndex]
-            while (prevPlace == placeString) {
-                placeString = ge.getRandomPlace()
-            }
-            roleShowed = roleShower(true, "", "")
+            MaterialAlertDialogBuilder(requireContext())
+                .setTitle(R.string.game_frag_rerole_alert)
+                .setPositiveButton(R.string.agree) { dialog, _ ->
+                    playerIndex = 0
+                    spy = ge.getRandomPlayer()
+                    val prevPlace = placeString
+                    playerNikname.text = playerList[playerIndex]
+                    while (prevPlace == placeString) {
+                        placeString = ge.getRandomPlace()
+                    }
+                    roleShowed = roleShower(true, "", "")
+                }
+                .setNegativeButton(R.string.disagree) { dialog, _ ->
+                    dialog.dismiss()
+                }
+                .show()
         }
 
         nextButton.setOnClickListener {
