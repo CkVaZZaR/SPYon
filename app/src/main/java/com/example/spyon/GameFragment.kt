@@ -51,12 +51,12 @@ class GameFragment : Fragment() {
         fun roleShower(roleShowed: Boolean, role: String, place: String): Boolean {
             if (roleShowed) {
                 showRoleButton.setIconResource(R.drawable.show)
-                roleCardView.setImageResource(R.drawable.spyon_card_filled)
+                roleCardView.setImageResource(R.drawable.spyon_card_2_black_filled)
                 playerRole.text = ""
                 gamePlace.text = ""
             } else {
                 showRoleButton.setIconResource(R.drawable.not_show)
-                roleCardView.setImageResource(R.drawable.spyon_card_empty)
+                roleCardView.setImageResource(R.drawable.spyon_card_2_black_empty)
                 playerRole.text = getString(R.string.game_frag_role) + ": $role"
                 gamePlace.text = getString(R.string.game_frag_place) + ": $place"
             }

@@ -26,7 +26,7 @@
         android:id="@+id/role_card_view"
         android:layout_width="wrap_content"
         android:layout_height="500dp"
-        android:src="@drawable/spyon_card_empty"
+        android:src="@drawable/spyon_card_2_black_empty"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

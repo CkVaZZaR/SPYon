@@ -24,7 +24,7 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="300dp"
-        android:src="@drawable/spyon_card_empty"
+        android:src="@drawable/icon_spy"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
