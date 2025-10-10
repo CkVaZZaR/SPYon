@@ -65,7 +65,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             app:icon="@drawable/refresh"
-            app:iconTint="@color/black"
             app:iconSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -89,8 +88,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:icon="@drawable/prev_4"
-                app:iconTint="@color/black"
-                app:strokeColor="@color/black"
                 app:iconSize="30sp">
 
             </com.google.android.material.button.MaterialButton>
@@ -101,8 +98,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 app:icon="@drawable/show"
-                app:iconTint="@color/black"
-                app:strokeColor="@color/black"
                 android:textSize="16sp"
                 app:iconSize="30sp"
                 android:layout_marginHorizontal="10dp">
@@ -115,8 +110,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:icon="@drawable/next_4"
-                app:iconTint="@color/black"
-                app:strokeColor="@color/black"
                 app:iconSize="30sp">
 
             </com.google.android.material.button.MaterialButton>

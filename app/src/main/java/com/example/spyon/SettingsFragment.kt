@@ -21,29 +21,13 @@ class SettingsFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_settings, container, false)
 
-//        val languageSwitcher: SwitchCompat = view.findViewById(R.id.languageSwitcher)
-
         val languageNow: TextView = view.findViewById(R.id.language_text_now)
         val languageLayout: ConstraintLayout = view.findViewById(R.id.language_layout)
         val placesButton: TextView = view.findViewById(R.id.place_list_button)
 
         val db = DbSettings(requireContext(), null)
 
-        val places = resources.getStringArray(R.array.places_array)
-
         languageNow.text = db.getValue("language")
-
-//        languageSwitcher.setOnClickListener {
-//            if (db.getValue("language") == "en") {
-//                LocaleHelper.setLocale(requireActivity(), "ru")
-//                db.setSetting("language", "ru")
-//                requireActivity().recreate()
-//            } else {
-//                LocaleHelper.setLocale(requireActivity(), "en")
-//                db.setSetting("language", "en")
-//                requireActivity().recreate()
-//            }
-//        }
 
         val items = arrayOf("Russian", "English")
         val langCode = arrayOf("ru", "en")
@@ -70,7 +54,7 @@ class SettingsFragment : Fragment() {
                 .setNegativeButton(R.string.close) { dialog, _ ->
                     dialog.dismiss()
                 }
-                .setItems(places, null)
+                .setItems(resources.getStringArray(R.array.places_array).sortedArray(), null)
                 .show()
         }
 

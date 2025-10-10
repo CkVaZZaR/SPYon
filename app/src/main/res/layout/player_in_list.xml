@@ -20,7 +20,7 @@
             android:layout_height="40dp"
             android:scaleType="centerCrop"
             android:src="@drawable/person"
-            app:tint="@color/black" />
+            app:tint="@color/text" />
 
         <TextView
             android:id="@+id/player_nikname"
